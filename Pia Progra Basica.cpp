@@ -240,12 +240,13 @@ void Modificar()
 		}
 		cout << "ingrese que desea modificar 1.-Nombre, 2.-Agregar Producto" << endl;
 		cin >> opcion;
+		cin.ignore();
 
 		switch (opcion)
 		{
 		case 1:
 			cout << "Ingrese Nombre" << endl;
-			cin >> restaurante[i].nombredelcliente;
+			getline(cin, restaurante[i].nombredelcliente);
 			break;
 		case 2:
 			printf("Que desea agregar: \n");
